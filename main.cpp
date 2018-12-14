@@ -193,7 +193,7 @@ int partition (int arr[], int posBegin, int posRear)
     float pivotRange = size * .05;
     static int counter;
     
-    // Check if pivot is %5 in range from either end of the array
+    // Check if pivot is 5% in range from either end of the array
     if (float(pivot) == pivotRange || float(pivot) == size - pivotRange)
     {
         counter++;
