@@ -252,7 +252,7 @@ void printArray(vector <int> arr[], int size)
 void textReader(vector<int> allNumArray[])
 {
     // Get file
-    ifstream inputFile("/Users/anthonyzamora/Documents/C++/Algorithm Project/Algorithm Project/unsorted7.txt");
+    ifstream inputFile("unsorted7.txt");
     string line;
     
     // Check if file can be opened
@@ -298,7 +298,7 @@ int main(int argc, const char * argv[])
     textReader(arr);
     textReader(arr1);
     
-    // For every vector of array, call jazzSort
+    // For every vector of array, call jazzSort and quickSort
     for (int i = 0; i < 7; i++)
     {
         jazzSort(arr[i].data(), 0, arr[i].size() - 1);
