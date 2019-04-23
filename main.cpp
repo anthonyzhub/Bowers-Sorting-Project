@@ -114,29 +114,6 @@ void merge(int arr[], int posBegin, int posMiddle, int posRear)
         curr++;
     }
 }
-/*
-void jazzSort(int arr[], int posBegin, int posEnd)
-{
-    if (posBegin < posEnd)
-    {
-        // Find middle part of array
-        int midPoint = (posBegin + posEnd)/2;
-        
-        // If size of array is less than 30.
-        if (posEnd < 30)
-        {
-            insertionSort(arr, posEnd);
-        }
-        
-        // Sort the first half of the array, then the other
-        jazzSort(arr, posBegin, midPoint);
-        jazzSort(arr, midPoint + 1, posEnd);
-        
-        // Merged the two sorted arrays
-        merge(arr, posBegin, posMiddle, posEnd);
-    }
-}
-*/
 
 void jazzSort(int arr[], int posBegin, int posMiddle, int posRear = NULL)
 {
